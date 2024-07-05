@@ -16,7 +16,7 @@ public class MainActivity extends ListActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        ArrayAdapter<String> adapter; adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, islands);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, islands);
         setListAdapter(adapter);
         OnItemClickListener itemListener = new OnItemClickListener() {
             @Override
