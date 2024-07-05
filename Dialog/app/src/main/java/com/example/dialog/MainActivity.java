@@ -25,5 +25,36 @@ public class MainActivity extends Activity implements OnClickListener {
         context = MainActivity.this;
         relativeLayout = (RelativeLayout)findViewById(R.id.relativelayout);
     }
+    @Override
+    public void onClick(View v) {
+        final CharSequence[] items = {getText(R.string.red) ,
+                getText(R.string.yellow),getText(R.string.green)
 
+        };
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.message);
+        builder.setItems(items, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int item) {
+                switch (item) {
+                    case 0: { relativeLayout.setBackgroundResource(R.color.redColor);
+                        Toast.makeText(context, R.string.red, Toast.LENGTH_LONG).show();
+
+                        break;}
+                    case 1:
+                    {relativeLayout.setBackgroundResource(R.color.yellowColor);
+                        Toast.makeText(context, R.string.yellow,
+                                Toast.LENGTH_LONG).show();
+
+                        break;}
+                    case 2:
+                    {relativeLayout.setBackgroundResource(R.color.greenColor);
+                        Toast.makeText(context, R.string.green, Toast.LENGTH_LONG).show();
+
+                        break;}
+                }
+            }
+        });
+        AlertDialog alert = builder.create();
+        alert.show();
+    }
 }
