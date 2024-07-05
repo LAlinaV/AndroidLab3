@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">lab3Example1</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="edit_message">Enter your text here</string>
+    <string name="button_send">Go!</string>
 </resources>
