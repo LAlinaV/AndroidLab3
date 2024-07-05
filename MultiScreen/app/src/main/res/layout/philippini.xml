@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="186dp"
-        android:src="@drawable/canari" />
+        android:src="@drawable/philippini" />
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
